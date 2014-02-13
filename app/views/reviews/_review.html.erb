@@ -1,0 +1,4 @@
+<section class='review'>
+  <h5><%= link_to review.title, movie_review_path(review.movie_id, review.id) %></h5>
+  <p><%= review.body.truncate(200, omission: '...') %>
+</section>

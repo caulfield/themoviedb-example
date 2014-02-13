@@ -5,5 +5,6 @@ class MoviesController < ApplicationController
   	@cast = Tmdb::Movie.casts(params[:id])
   	@trailers = Tmdb::Movie.trailers(params[:id])
   	@similar_movies = Tmdb::Movie.similar_movies(params[:id])
+    @reviews = Review.where(movie_id: params[:id])
   end
 end

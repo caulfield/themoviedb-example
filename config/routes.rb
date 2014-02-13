@@ -1,5 +1,9 @@
 ThemoviedbExample::Application.routes.draw do
-  resources :movies
+  get "reviews/create"
+
+  resources :movies do
+    resources :reviews, only: [:create, :show, :new]
+  end
   resources :collections
   resources :person
   resources :company
