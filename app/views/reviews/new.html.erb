@@ -1,0 +1,7 @@
+<div class="container-fluid">
+  <%= render 'movies/overview' %>
+  <div class='span10'>
+    <h2> New review for <%= @movie.title %></h2>
+    <%= render 'form', review: @review %>
+  </div>
+</div>

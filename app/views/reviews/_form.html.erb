@@ -1,0 +1,5 @@
+<%= simple_form_for review, html: {class: 'form-inline'}, url: movie_reviews_path(params[:movie_id]) do |f| %>
+  <%= f.attribute :title, required: false %>
+  <%= f.attribute :body, required: false  %>
+  <%= f.submit %>
+<% end %>

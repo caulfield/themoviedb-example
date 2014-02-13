@@ -7,6 +7,7 @@ gem 'rails', '3.2.14'
 
 gem 'themoviedb', '0.0.5'
 gem 'responders'
+gem 'simple_form'
 
 gem 'sqlite3', :group => [:development, :test]
 group :production do

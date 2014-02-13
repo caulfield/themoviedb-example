@@ -9,6 +9,7 @@
     Runtime: <%= @movie.runtime %><br />
     Release Date: <br />
     <%= @movie.release_date.to_date.strftime("%d/%m/%Y") if @movie.release_date %><br />
+    <h3><%= link_to 'Add review', new_movie_review_path(@movie.id)%></h3>
     <h2>Trailers</h2>
     <% @trailers['youtube'].each do |trailer| %>
       <%= link_to "#{trailer['name']} - #{trailer['size']}", "http://www.youtube.com/watch?v=#{trailer['source']}" %><br />
